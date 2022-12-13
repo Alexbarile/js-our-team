@@ -39,9 +39,10 @@ console.log(members);
 // MILESTONE 1
 
 
-for(let i=0; i=members.length; i++){
+for(let i=0; i<members.length; i++){
     let membri = members[i];
     console.log(membri.nome);
     console.log(membri.ruolo);
     console.log(membri.foto);
 }
+
