@@ -46,3 +46,15 @@ for(let i=0; i<members.length; i++){
     console.log(membri.foto);
 }
 
+// MILESTONE 2
+
+let container = document.querySelector('.container')
+
+let member;
+
+for(let i=0; i<members.length; i++){
+    member = document.createElement('div');
+    member.innerText = `Nome: ${members[i].nome}, Ruolo: ${members[i].ruolo}, Immagine: ${members[i].foto}`;
+    container.append(member);
+    member.style.font = 'bold 15px arial,serif'; 
+};
