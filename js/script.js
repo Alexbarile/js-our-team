@@ -38,20 +38,20 @@ console.log(members);
 
 // MILESTONE 1
 
-let container = document.getElementById('card-container')
+// let container = document.getElementById('card-container')
 
 
-for(let i=0; i<members.length; i++){
-    let membri = members[i];
+// for(let i=0; i<members.length; i++){
+//     let membri = members[i];
 
-    // BONUS 1
+//     // BONUS 1
 
-    container.innerHTML += `
-            <img src="./img/${membri.foto}" width="200px"/>
-            <p>${membri.nome}</p>
-            <p>${membri.ruolo}</p>
-            `
-}
+//     container.innerHTML += `
+//             <img src="./img/${membri.foto}" width="200px"/>
+//             <p>${membri.nome}</p>
+//             <p>${membri.ruolo}</p>
+//             `
+// }
 
 // MILESTONE 2
 
@@ -69,11 +69,21 @@ for(let i=0; i<members.length; i++){
 // BONUS 2
 
 function drawTeamMember(person){
-    const card_list = document.getElementById('cards-container');
+    const card_list = document.getElementById('card-container');
 
     let member_card = `
-        <div class="item-card">
+        <div class="team-card">
+            <div class="card-image">
+                <img class="img-fluid" src="./img/${person.foto}" alt="${person.nome}"/>
+            </div>
+            <div class="card-text">
+                <h4>${person.nome}</h4>
+                <p>${person.ruolo}</p>
+
+            </div>
+        </div>
     `
+    card_list.innerHTML += member_card
 }
 
 for(let i=0; i<members.length; i++){

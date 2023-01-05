@@ -4,4 +4,14 @@
     box-sizing: border-box;
 }
 
+.title{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+.team-card{
+    width: calc(100% / 3 - 20px);
+    padding: 10px;
+}
 
